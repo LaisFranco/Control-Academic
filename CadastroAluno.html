@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <link rel="stylesheet" type="text/css" href="main.css">
+<title> Cadastro Aluno </title> 
+   
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.maskedinput.js"></script>
+    
+</head>
+<script type="text/javascript">
+ $(document).ready(function(){
+   $("input.data").mask("99/99/9999");
+   $("input.cpf").mask("999.999.999-99");
+   $("input.cep").mask("99.999-999");
+   $("input.rg").mask("99.999.999");
+   $("input.tel").mask("(99)9999-9999");
+                      
+});
+</script>
+    
+<body>
+    
+    <form action="">
+    <fieldset>
+        <legend>Cadastro Aluno </legend>
+        
+   <label for="nome"> Nome: </label><br>
+    <input type="text" name="nome" id="nome" size="30" placeholder="nome">
+        
+   <label for="sexo">Sexo: </label>
+    <select title="Sexo: " name="sexo" id="sexo">
+     <option value="">Please Select ... </option>
+     <option value="FEMININO">FEMININO</option>
+     <option value="MASCULINO">MASCULINO</option>
+   </select><br/>
+        
+   <label for="datanascimento">Data de Nascimento: </label><br/>
+    <input type="date" class="datanascimento" name="datanascimento"><br/>
+        
+   <label for="cpf"> Cpf: </label><br/>
+    <input type="text" class="cpf" name="cpf" id="cpf"><br />
+        
+   <label for="rg">RG: </label><br/>
+    <input type="text" class="rg" name="rg" id="rg"><br />
+        
+   <label for="endereco">Endereço: </label><br/>
+    <input type="text" name="endereco" id="endereco" size="30"><br />
+        
+   <label for="numero">Numero: </label> <br/>
+    <input type="text" name="numero" id="numero">
+   <label for="complemento">Complemento: </label> 
+    <input type="text" name="complemento" id="complemento"> 
+        
+   <label for="bairro">Bairro: </label>
+    <input type="text" name="bairro" id="bairro"><br />
+        
+   <label for="cep"> CEP: </label><br/>
+    <input type="text" class="cep" name="cep"><br/>
+        
+   <label for="tel">Tel: </label><br/>
+    <input  type="text" class="tel" name="tel"><br/>
+     <br />  
+        
+   <label for="escolaridade">Escolaridade: </label>
+    <select title="escolaridade" name="escolaridade" id="escolaridade">
+     <option value=""> Please Select ...</option>
+     <option value=""      
+     <option value="Ensino Fundamental"> Ensino Fundamental</option>
+     <option value="Ensino Medio"> Ensino Medio </option>
+    </select>
+        
+    <label for="ano">Ano: </label>
+     <select name="ano">
+      <optgroup label="Ensino Fundamental">
+       <option value=""> Please Select... </option>
+        <option> 5ªSérie - 6ºAno </option>
+        <option> 6ªSérie - 7ºAno </option>
+        <option> 7ªSérie - 8ºAno </option>
+        <option> 8ªSérie - 9ºAno </option>
+      </optgroup>
+       <optgroup label="Ensino Medio">
+        <option> 1ºAno </option>
+        <option> 2ºAno </option>
+        <option> 3ºAno </option>
+       </optgroup>
+     </select> <br/> <br />
+        
+    <input type="submit" name="submit" value="Cadastrar" class="botao">
+     
+    </fieldset>
+    </form>
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+</html>
