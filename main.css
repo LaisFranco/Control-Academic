@@ -1,0 +1,51 @@
+fieldset {
+    width: 800px;
+	margin: 40px auto;
+	border: 2px solid #000;
+	
+}
+fieldset{
+    
+    border-color: #62B7FF;
+	background: url(imagens/wforms_bg.gif) repeat-x bottom;
+}
+legend {
+	width: 284px;
+	height: 32px;
+	background: url(imagens/legend_bg.gif) no-repeat center;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0 0 2px #000;
+	line-height: 30px;
+}
+
+
+label:focus {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+input { 
+    background-color: aliceblue;
+    font: 12px verdana, arial, helvetica, sans-serif;
+    color: black;
+    border:2px solid #000099;
+}
+
+select{
+    background-color: aliceblue;
+    font: 12px verdana, arial, helvetica, sans-serif;
+    color: black;
+    border:2px solid #000099;
+    
+}
+
+.botao:hover:focus {
+        text-align:center;
+        background-color: blue;
+        font: 12px Verdana, sans-serif;
+        color: skyblue;
+}
